@@ -1,0 +1,11 @@
+@import './components/button/index.scss';
+
+$red: yellow;
+
+.test {
+  color: $red;
+
+  &2 {
+    color: blue
+  }
+}
