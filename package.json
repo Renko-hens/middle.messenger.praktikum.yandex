@@ -5,10 +5,10 @@
   "author": "dshibidzhiev <dshibidzhiev@ubic.tech>",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel public/*.html --open",
-    "watch": "parcel watch public/*.html",
-    "build": "parcel build  public/*.html",
-    "start": "parcel build public/*.html && node ./src/server.js"
+    "dev": "parcel static/*.html --open",
+    "watch": "parcel watch static/*.html",
+    "build": "parcel build  static/*.html",
+    "start": "parcel build static/*.html && node ./src/server.js"
   },
   "dependencies": {
     "@anikin/parcel-transformer-handlebars-precompile": "^1.0.1",
