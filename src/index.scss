@@ -1,0 +1,23 @@
+@import './shared/styles/index.scss';
+@import './components/index.scss';
+@import './pages/index.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: $font-size-base;
+
+  @media (max-width: $md-breakpoint) {
+    font-size: $font-size-mob;
+  }
+}
+
+body {
+  font-family: $font-family-base;
+}
