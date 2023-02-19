@@ -1,0 +1,44 @@
+<div class="authorization">
+  <div class="authorization__container">
+    <h1 class="authorization__title">
+      Вход
+    </h1>
+
+    <form 
+      class="authorization__form form"
+      onsubmit="event.preventDefault()"
+    >
+      {{> input 
+        class="authorization__input" 
+        name='login' 
+        type="text" 
+        required="true" 
+        placeholder="Логин"
+      }}
+
+      {{> input 
+        class="authorization__input" 
+        type="password" 
+        name='password' 
+        required="true" 
+        placeholder="Пароль"
+      }}
+
+      <div class="authorization__controls">
+        {{> button 
+          class="authorization__button" 
+          label="Войти" 
+          handleClick="goToPage('chat')" 
+        }}
+        
+        {{> button 
+          class="authorization__button"
+          secondary="true"
+          type="button" 
+          label="Ещё не зарегистрированы?"
+          handleClick="goToPage('registration')" 
+        }}
+      </div>
+    </form>
+  </div>
+</div>

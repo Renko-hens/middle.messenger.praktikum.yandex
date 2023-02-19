@@ -1,3 +1,15 @@
 .button {
-  color: red;
+  background-color: $color-light-blue-A800;
+  border: none;
+  border-radius: .5rem;
+  color: $color-white;
+  cursor: pointer;
+  font-size: .813rem;
+  font-weight: $font-weight-medium;
+  padding: .75rem;
+
+  &--secondary {
+    background-color: transparent;
+    color: $color-light-blue-A800;
+  }
 }

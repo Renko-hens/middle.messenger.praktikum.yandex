@@ -1,0 +1,17 @@
+<div class="status">
+  <h1 class="status__title">
+    {{title}}
+  </h1>
+
+  <p class="status__description">
+    {{description}}
+  </p>
+
+  {{> button 
+    class="status__button"
+    label="Назад к чатам" 
+    secondary="true"
+    type="button" 
+    handleClick="goToPage('profile')" 
+  }}
+</div>
