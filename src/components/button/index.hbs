@@ -1,1 +1,13 @@
-<button onclick="{{handleClick}}" class="{{ className }}">{{ label }}</button>
+<button 
+  type="{{type}}" 
+  class="
+    button 
+    {{#if secondary}}
+      button--secondary
+    {{/if}}
+    {{ class }}
+  "
+  onclick="{{handleClick}}" 
+  >
+    {{ label }}
+  </button>

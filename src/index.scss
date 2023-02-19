@@ -1,11 +1,23 @@
-@import './components/button/index.scss';
+@import './shared/styles/index.scss';
+@import './components/index.scss';
+@import './pages/index.scss';
 
-$red: yellow;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-.test {
-  color: $red;
+html {
+  font-size: $font-size-base;
 
-  &2 {
-    color: blue
+  @media (max-width: $md-breakpoint) {
+    font-size: $font-size-mob;
   }
+}
+
+body {
+  font-family: $font-family-base;
 }
